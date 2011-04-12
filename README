@@ -1,0 +1,17 @@
+# install
+tiffanybot.py requires SQLAlchemy and Skype4Py. you need to install them by
+easy_install or package manager.
+$ sudo easy_install SQLAlchemy
+$ sudo easy_install skype4py
+
+# setup
+you need to create config.py, config-sample.py is a good sample for you.
+
+# run
+firs of all, you need to launch skype client.
+next, execute tiffanybot.py.
+
+your skype might pop-up authentification window, you need to push "allow" button.
+after that, enjoy bot-life!.
+
+in default, @@@help command may be a good friend for you.
