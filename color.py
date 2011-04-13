@@ -14,7 +14,7 @@ def string_with_color(string, color):
     "add escape sequence to colorize string"
     clear_key = COLORS["clear"]
     color_key = COLORS[color]
-    return color_key + string + clear_key
+    return color_key + string.encode("utf-8") + clear_key
 
 def warn_print(string):
     "print string in yellow"
@@ -28,5 +28,5 @@ def debug_print(string):
 
 def verbose_print(string):
     "print string in purple"
-    print string_with_color("[verbose] " + string, "purple")
+    #print string_with_color("[verbose] " + string, "purple")
     return

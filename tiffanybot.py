@@ -21,6 +21,7 @@ from db import DBInterface
 from config import DB_NAME
 from skype import SkypeEventHandler
 from color import verbose_print
+import time
 
 class TiffanyBot(object):
     "application class of tiffanybot."
@@ -36,7 +37,8 @@ class TiffanyBot(object):
         """main function of tiffanybot. it runs main-loop of
         this application."""
         while True:
-            pass
+            time.sleep(1.0)
+            print "[%s] tick" % (time.localtime(time.time()))
 
 if __name__ == "__main__":
     bot = TiffanyBot()
