@@ -125,6 +125,18 @@ class TiffanyRoomCommand(TiffanyCommand):
         chat.changeRoom(di, " ".join(self.commandArguments()))
         return
 
+class TiffanyGJCommand(TiffanyCommand):
+    """
+    GJ:
+      tiffany will feel happy if you say GJ!.
+    """
+    def __init__(self, original, args):
+        TiffanyCommand.__init__(self, "GJ", original, args)
+        return
+    def run(self, chat, di):
+        chat.sendMessage("Thank You!")
+        return
+
     
 valid_commands = [TiffanyExitCommand, TiffanyHelpCommand, TiffanyHelloCommand,
                   TiffanyTopicCommand, TiffanyRoomCommand]
