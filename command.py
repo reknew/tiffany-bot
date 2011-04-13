@@ -139,7 +139,7 @@ class TiffanyGJCommand(TiffanyCommand):
 
     
 valid_commands = [TiffanyExitCommand, TiffanyHelpCommand, TiffanyHelloCommand,
-                  TiffanyTopicCommand, TiffanyRoomCommand]
+                  TiffanyTopicCommand, TiffanyRoomCommand, TiffanyGJCommand]
 
 def commandDispatch(command):
     """
