@@ -137,9 +137,21 @@ class TiffanyGJCommand(TiffanyCommand):
         chat.sendMessage("Thank You!")
         return
 
+class TiffanyBitchCommand(TiffanyCommand):
+    """
+    bitch:
+      Don't say such a dirty word!
+    """
+    def __init__(self, original, args):
+        TiffanyCommand.__init__(self, "bitch", original, args)
+        return
+    def run(self, chat, di):
+        chat.sendMessage("Shut up you fuxxin' fag")
+        return
     
-valid_commands = [TiffanyExitCommand, TiffanyHelpCommand, TiffanyHelloCommand,
-                  TiffanyTopicCommand, TiffanyRoomCommand, TiffanyGJCommand]
+valid_commands = [TiffanyHelpCommand, TiffanyHelloCommand,
+                  TiffanyTopicCommand, TiffanyRoomCommand, TiffanyGJCommand,
+                  TiffanyBitchCommand]
 
 def commandDispatch(command):
     """
